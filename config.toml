@@ -7,7 +7,7 @@ paginate = 5
 pluralizelisttitles = false
 
 [params]
-    brand = "Poison"                    # name of your site - appears in the sidebar
+    brand = "paultaku's blog"                    # name of your site - appears in the sidebar
     brand_image = "/images/test.jpeg"    # path to the image shown in the sidebar
     dark_mode = false                    # optional - defaults to false
 
@@ -18,7 +18,6 @@ pluralizelisttitles = false
         # HasChildren:  If the directory's files should be listed.  Default is true.
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
-        {Name = "About", URL = "/about/", HasChildren = false},
         {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
     ]
 
