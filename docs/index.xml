@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>/</link><description>Recent content on</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Jan 2023 17:58:09 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Zod - 透過定義 Schema 以驗證資料的套件，可以彌補 TypeScript 的弱點</title><link>/posts/2023/01/zod/</link><pubDate>Mon, 09 Jan 2023 17:58:09 +0800</pubDate><guid>/posts/2023/01/zod/</guid><description>介紹 Typescript 轉譯成 Javascript 之後，執行程式碼就無法驗證資料的型態是否是正確的。在三大框架裡面有許多好用的驗證套件。但是 Zod 是一個可以透過宣告 Schema 去驗證資料的 Typescript 的函式庫。透過宣告的方式，補足了執行從 Typescript 轉譯之後的程式卻無法驗證資料型別的不足。
+使用情境 從 API 取得資料之後 要驗證表單輸入資料是否正確時 我用電商網站的商品作為例子:
+假設這是電商網站上產品的物件型別
+宣告型別 透過定義各個欄位型別，會有一個最後的 schema object。可以透過 schema object 做資料格式的判斷。
+如果資料錯誤就會丟出 ZodError，ZodError 的格式如下圖:
+也可以客製化錯誤訊息
+結論 Zod 可以彌補 Typescript 的不足。原生瀏覽器目前是沒有辦法直接執行 Typescript 的，會需要透過 Webpack 等之類的打包工具去轉譯成原生瀏覽器可以支援的格式。所以 Typescript 目前可以做到的型別檢查還是在還沒轉譯之前，透過檢查的方式判斷變數的資料型別對不對。 Zod 做好資料格式方面的驗證，而且支援客製化錯誤訊息。不過在表單的資料驗證，還會有需要做跨表單的驗證或是資料邏輯方面的驗證。這是使用 Zod 需要特別注意的地方。 參考資料 Github Source Typescript: 他實際上沒有驗證你的型別</description></item></channel></rss>
